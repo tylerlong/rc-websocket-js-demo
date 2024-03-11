@@ -18,3 +18,8 @@ const main = async () => {
   });
 };
 main();
+
+// Attention:  this demo code doesn't show how to manage your access token.
+// By default, access token will expire in 1 hour. And after one hour, you WebSocket connection will break (because access token expired)
+// You will need to setup a timer to refresh your token. `rc.refresh()`
+// Or I suppose your existing system has a way to maintain your token.
